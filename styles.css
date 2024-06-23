@@ -74,11 +74,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* justify-content: center; */
 }
 
 .titulo {
     margin-bottom: 20px; /* Espaçamento abaixo do título */
-    align-items: center;
+    justify-content: center;
     margin-top: 40px;
 }
 
@@ -90,9 +91,29 @@
 
 .todo {
     background-color: white;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     width: 49%; /* Ajuste conforme necessário para espaçamento */
     height: 500px; 
     padding: 10px; /* Adiciona espaçamento interno */
+}
+
+.titulo2 {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.lista-tarefas {
+
+    padding-left: 15px;
+    padding-top: 20px;
+
+}
+
+.tarefa {
+
+    padding-bottom: 5px;
+
 }
