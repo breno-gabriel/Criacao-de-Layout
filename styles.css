@@ -56,7 +56,7 @@
 
 .conteudo-principal {
     width: 70%; /* Três quartos da largura da tela */
-    background-color:#ccc;
+    background-color:cornsilk;
     /* color: white; */
     display: flex;
     align-items: center;
@@ -79,7 +79,7 @@
 
 .secao {
 
-    background-color: white;
+    background-color: #ccc;
     width: 95%;
     height: 95%;
 
