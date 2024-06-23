@@ -14,15 +14,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     background-color: cornsilk;
-    border-color: red;
     padding: 20px; /* Adiciona espaçamento interno */
 }
 
 .menu-esquerdo .nome {
     margin-top: 10px; /* Adiciona margem acima do nome */
-    
 }
 
 .menu-esquerdo p {
@@ -39,34 +36,27 @@
     margin-bottom: 8px; /* Espaçamento entre os itens da lista */
 }
 
-.menu-esquerdo ul li a{
-
+.menu-esquerdo ul li a {
     text-decoration: none; /* Remove o sublinhado padrão */
     color: #333; /* Cor do texto dos links */
     display: block; /* Transforma os links em blocos para ocupar toda a largura do li */
     padding: 8px 16px; /* Espaçamento interno dos links */
-    
 }
 
-.menu-esquerdo ul li a:hover{
-
+.menu-esquerdo ul li a:hover {
     background-color: #ddd;
-
 }
 
 .conteudo-principal {
     width: 70%; /* Três quartos da largura da tela */
-    background-color:cornsilk;
-    /* color: white; */
+    background-color: cornsilk;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .nome {
-
     justify-content: center;
-
 }
 
 .foto-perfil {
@@ -78,17 +68,31 @@
 }
 
 .secao {
-
     background-color: #ccc;
-    width: 95%;
+    width: 90%;
     height: 95%;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titulo {
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    align-items: center;
+    margin-top: 40px;
+}
 
+.todoList {
+    display: flex;
+    justify-content: space-around; /* Distribui espaço ao redor dos itens */
+    width: 95%; /* Adiciona largura total */
+}
+
+.todo {
+    background-color: white;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-
+    width: 49%; /* Ajuste conforme necessário para espaçamento */
+    height: 500px; 
+    padding: 10px; /* Adiciona espaçamento interno */
 }
