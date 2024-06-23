@@ -27,7 +27,7 @@
             <!--Links-->
             <ul>
                 <li><a href="https://www.instagram.com/breno_gabriel83">Instagram</a></li>
-                <li><a href="www.linkedin.com/in/brenogabriel">Linkedin</a></li>
+                <li><a href="https://www.linkedin.com/in/brenogabriel">Linkedin</a></li>
                 <li><a href="https://github.com/breno-gabriel">GitHub</a></li>
                 <li><a href="https://portal.cin.ufpe.br/">CIn UFPE</a></li>
             </ul>
@@ -37,27 +37,26 @@
             <section class="secao">
                 <h1 class="titulo">LISTA DE TAREFAS</h1>
                 <div class="todoList">
-                    <section class="todo">
+                    <section class="todo" id="dayTasks">
                         <h2 class="titulo2">Dia</h2>
-                        <ol class="lista-tarefas">
-                            <li class="tarefa">Assitir aula de Teoria e Implementação de Linguagem Computacional</li>
-                            <li class="tarefa">Apresentar projeto de Engenharia de Software</li>
-                            <li class="tarefa">Fazer lista de exercícios de Paradigma de Lingaugem Computacional</li>
-                            <li class="tarefa">Começar a fazer o artigo sobre IA</li>
-                        </ol>
+                        <ol class="lista-tarefas"></ol>
                     </section>
-                    <section class="todo">
+                    <section class="todo" id="nightTasks">
                         <h2 class="titulo2">Noite</h2>
-                        <ol class="lista-tarefas">
-                            <li class="tarefa">Assitir aula de Teoria e Implementação de Linguagem Computacional</li>
-                            <li class="tarefa">Apresentar projeto de Engenharia de Software</li>
-                            <li class="tarefa">Fazer lista de exercícios de Paradigma de Lingaugem Computacional</li>
-                            <li class="tarefa">Começar a fazer o artigo sobre IA</li>
-                        </ol>
+                        <ol class="lista-tarefas"></ol>
                     </section>
                 </div>
+                <form id="taskForm">
+                    <input type="text" id="taskInput" placeholder="Adicionar nova tarefa" required>
+                    <select id="taskTime">
+                        <option value="dayTasks">Dia</option>
+                        <option value="nightTasks">Noite</option>
+                    </select>
+                    <button type="submit">Adicionar Tarefa</button>
+                </form>
             </section>
         </main>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>

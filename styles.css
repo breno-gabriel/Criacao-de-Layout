@@ -6,7 +6,7 @@
 
 .layout {
     display: flex;
-    height: 100vh; /* Altura total da janela */
+    height: 100vh;
 }
 
 .menu-esquerdo {
@@ -15,32 +15,32 @@
     flex-direction: column;
     align-items: center;
     background-color: cornsilk;
-    padding: 20px; /* Adiciona espaçamento interno */
+    padding: 20px;
 }
 
 .menu-esquerdo .nome {
-    margin-top: 10px; /* Adiciona margem acima do nome */
+    margin-top: 10px;
 }
 
 .menu-esquerdo p {
-    margin: 10px 0; /* Adiciona margem vertical ao texto */
+    margin: 10px 0;
 }
 
 .menu-esquerdo ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 20px; /* Adiciona margem acima da lista */
+    margin-top: 20px;
 }
 
 .menu-esquerdo ul li {
-    margin-bottom: 8px; /* Espaçamento entre os itens da lista */
+    margin-bottom: 8px;
 }
 
 .menu-esquerdo ul li a {
-    text-decoration: none; /* Remove o sublinhado padrão */
-    color: #333; /* Cor do texto dos links */
-    display: block; /* Transforma os links em blocos para ocupar toda a largura do li */
-    padding: 8px 16px; /* Espaçamento interno dos links */
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 16px;
 }
 
 .menu-esquerdo ul li a:hover {
@@ -48,7 +48,7 @@
 }
 
 .conteudo-principal {
-    width: 70%; /* Três quartos da largura da tela */
+    width: 70%;
     background-color: cornsilk;
     display: flex;
     align-items: center;
@@ -63,8 +63,8 @@
     width: 300px;
     height: auto;
     border-radius: 50%;
-    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
-    border: 2px solid black; /* Borda preta */
+    max-width: 100%;
+    border: 2px solid black;
 }
 
 .secao {
@@ -74,46 +74,79 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .titulo {
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    margin-bottom: 20px;
     justify-content: center;
     margin-top: 40px;
 }
 
 .todoList {
     display: flex;
-    justify-content: space-around; /* Distribui espaço ao redor dos itens */
-    width: 95%; /* Adiciona largura total */
+    justify-content: space-around;
+    width: 95%;
 }
 
 .todo {
     background-color: white;
-    /* display: flex; */
-    /* justify-content: center; */
-    width: 49%; /* Ajuste conforme necessário para espaçamento */
-    height: 500px; 
-    padding: 10px; /* Adiciona espaçamento interno */
+    width: 49%;
+    height: 500px;
+    padding: 10px;
 }
 
 .titulo2 {
-
     display: flex;
     justify-content: center;
-
 }
 
 .lista-tarefas {
-
     padding-left: 15px;
     padding-top: 20px;
-
 }
 
 .tarefa {
-
     padding-bottom: 5px;
+}
 
+form {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+form input, form select {
+    width: 50%;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.btn-excluir {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.btn-excluir:hover {
+    opacity: 0.7;
 }
